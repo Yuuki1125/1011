@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横並びサンプル</title>
+    <style>
+        .contents{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color: bisque;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .text{
+            width: 1000px;
+            background-color: aquamarine;
+            color: #fff;
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+@media(max-width:767px){
+    .contents{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="contents">
+        <div class="box"><img src="img/a.svg" alt="画像ボックス">テキスト1</div>
+        <div class="box"><img src="img/b.svg" alt="画像ボックス">テキスト2</div>
+        <div class="box"><img src="img/c.svg" alt="画像ボックス">テキスト3</div>
+        <div class="box"><img src="img/d.svg" alt="画像ボックス">テキスト4</div>
+    </div>
+    <div class="text">D115<br>ダミーテキストダミーテキストダミーテキスト
+        ダミーテキストダミーテキストダミーテキスト
+        ダミーテキストダミーテキストダミーテキスト
+    </div>
+</body>
+</html>
